@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "ComicShield",
+  "version": "0.2.0",
+  "description": "A Chrome extension for cleaner comix.to reading that neutralizes intrusive click traps, deceptive ad overlays, and reader-disrupting surfaces while preserving normal comic reading controls.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://comix.to/*",
+    "https://*.comix.to/*"
+  ],
+  "action": {
+    "default_title": "ComicShield",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon16.png",
+      "32": "assets/icons/icon32.png",
+      "48": "assets/icons/icon48.png",
+      "128": "assets/icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://comix.to/*",
+        "https://*.comix.to/*"
+      ],
+      "js": [
+        "core/settings.js",
+        "adapters/comix.js",
+        "core/domShield.js",
+        "core/readerController.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "32": "assets/icons/icon32.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  }
+}

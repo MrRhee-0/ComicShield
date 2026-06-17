@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ComicShield</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup">
+      <header class="popup__header">
+        <div>
+          <h1>ComicShield</h1>
+          <p id="statusText">Protection settings</p>
+        </div>
+        <span class="badge">v0.2.1</span>
+      </header>
+
+      <section class="toggles" aria-label="ComicShield settings">
+        <h2>Shield</h2>
+        <label class="toggle">
+          <span>ComicShield enabled</span>
+          <input type="checkbox" data-setting="enabled">
+        </label>
+        <label class="toggle">
+          <span>Hide intrusive ads</span>
+          <input type="checkbox" data-setting="hideIntrusiveAds">
+        </label>
+        <label class="toggle">
+          <span>Disable invisible click traps</span>
+          <input type="checkbox" data-setting="disableClickTraps">
+        </label>
+        <label class="toggle">
+          <span>Hide sticky/floating ad bars</span>
+          <input type="checkbox" data-setting="hideStickyAds">
+        </label>
+        <label class="toggle">
+          <span>Protect reader clicks</span>
+          <input type="checkbox" data-setting="protectReaderClicks">
+        </label>
+        <h2>Reader</h2>
+        <label class="toggle">
+          <span>Show reader controller</span>
+          <input type="checkbox" data-setting="showReaderController">
+        </label>
+        <label class="toggle">
+          <span>Enable autoscroll controls</span>
+          <input type="checkbox" data-setting="enableAutoscrollControls">
+        </label>
+        <label class="toggle">
+          <span>Enable reader zoom controls</span>
+          <input type="checkbox" data-setting="enableReaderZoomControls">
+        </label>
+        <label class="toggle">
+          <span>Remember autoscroll speed</span>
+          <input type="checkbox" data-setting="rememberAutoscrollSpeed">
+        </label>
+        <label class="toggle">
+          <span>Remember reader zoom</span>
+          <input type="checkbox" data-setting="rememberReaderZoom">
+        </label>
+        <label class="toggle">
+          <span>Resume autoscroll on reader pages</span>
+          <input type="checkbox" data-setting="resumeAutoscroll">
+        </label>
+        <h2>Diagnostics</h2>
+        <label class="toggle">
+          <span>Debug mode</span>
+          <input type="checkbox" data-setting="debug">
+        </label>
+      </section>
+    </main>
+
+    <script src="core/settings.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

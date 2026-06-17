@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="assets/icons/icon128.png" alt="ComicShield icon" width="128" height="128">
+</p>
 # ComicShield
 
 ComicShield is a Chrome extension for cleaner comix.to reading that neutralizes intrusive click traps, deceptive ad overlays, and reader-disrupting surfaces while preserving normal comic reading controls.
@@ -93,3 +96,4 @@ Compare the hash with the matching line in `release/SHA256SUMS.txt`.
 ## License
 
 MIT License. See `LICENSE`.
+

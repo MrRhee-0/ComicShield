@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.2.2 - Local/Public Icon Sync
+
+- Synced the public manifest metadata with the working local extension version.
+- Confirmed Chrome MV3 extension icons and action icons resolve from `assets/icons`.
+- Published a corrected release ZIP with the official icon assets included.
+
 ## v0.2.0 - Initial Public Release
 
 - Initial public release of ComicShield.

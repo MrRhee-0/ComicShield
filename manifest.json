@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "ComicShield",
-  "version": "0.2.0",
-  "description": "A Chrome extension for cleaner comix.to reading that neutralizes intrusive click traps, deceptive ad overlays, and reader-disrupting surfaces while preserving normal comic reading controls.",
+  "version": "0.2.2",
+  "description": "Blocks intrusive overlays on comix.to, preserves browse filters, and adds reader autoscroll and zoom controls.",
   "permissions": [
     "storage"
   ],
